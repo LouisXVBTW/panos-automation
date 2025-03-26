@@ -1,7 +1,7 @@
 from panos.firewall import Firewall
 from panos.policies import Rulebase, SecurityRule
 
-with open("../sensitive/ngfw1-azure.info", 'r') as f:
+with open("../sensitive/ngfw1-local.info", 'r') as f:
     ngfw1Azuree = f.read().splitlines()
 
 fw = Firewall(ngfw1Azuree[0], ngfw1Azuree[1], ngfw1Azuree[2])
