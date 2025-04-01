@@ -1,0 +1,21 @@
+SSL data:
+
+Running Sessions:
+show applications vsys vsys1 list ssl
+show session all filter application ssl
+
+
+
+SSL counters:
+show counter global | match ssl
+show counter global filter severity drop category ssl
+
+
+View SSL logs:
+less mp-log sslmgr.log
+or 
+tail mp-log sslmgr.log
+
+
+SSL cert stuff:
+show sslmgr-store certificate-info 
